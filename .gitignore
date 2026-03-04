@@ -1,0 +1,18 @@
+# Carpetas de compilación de ROS 2 y micro-ROS
+build/
+install/
+log/
+
+# Archivos temporales de Python (comunes en ROS 2)
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos compilados de C++
+*.o
+*.so
+*.out
+
+# Archivos ocultos del sistema operativo (Mac/Linux)
+.DS_Store
+*~
