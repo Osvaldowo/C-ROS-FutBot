@@ -1,9 +1,0 @@
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/uninstall.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/segmentation_uninstall.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/test.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/edit_cache.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/rebuild_cache.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/list_install_components.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/install.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/install/local.dir
-/home/oswiwi/color_segmentation_ws/build/segmentation/CMakeFiles/install/strip.dir

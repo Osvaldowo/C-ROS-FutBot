@@ -15,12 +15,10 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 
 # 2. Crear el ejecutable
-add_executable(led_node_cpp src/led_publisher.cpp)
 add_executable(twist_sequencer src/twist_sequencer.cpp) # <--- NUEVO
 add_executable(odom_publisher src/odom_publisher.cpp)
 
 # 3. Vincular dependencias al ejecutable
-ament_target_dependencies(led_node_cpp rclcpp std_msgs)
 ament_target_dependencies(twist_sequencer rclcpp geometry_msgs) # <--- NUEVO
 ament_target_dependencies(odom_publisher rclcpp std_msgs geometry_msgs nav_msgs tf2 tf2_ros)
 
