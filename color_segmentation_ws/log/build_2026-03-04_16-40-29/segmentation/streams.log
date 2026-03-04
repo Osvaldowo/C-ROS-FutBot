@@ -1,0 +1,47 @@
+[0.020s] Invoking command in '/home/oswiwi/color_segmentation_ws/build/segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oswiwi/color_segmentation_ws/src/segmentation -DCMAKE_INSTALL_PREFIX=/home/oswiwi/color_segmentation_ws/install/segmentation
+[0.225s] -- The C compiler identification is GNU 13.3.0
+[0.387s] -- The CXX compiler identification is GNU 13.3.0
+[0.432s] -- Detecting C compiler ABI info
+[0.569s] -- Detecting C compiler ABI info - done
+[0.583s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.584s] -- Detecting C compile features
+[0.587s] -- Detecting C compile features - done
+[0.609s] -- Detecting CXX compiler ABI info
+[0.755s] -- Detecting CXX compiler ABI info - done
+[0.770s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.770s] -- Detecting CXX compile features
+[0.771s] -- Detecting CXX compile features - done
+[0.798s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.045s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.402s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.634s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.634s] -- Configured cppcheck include dirs: 
+[1.634s] -- Configured cppcheck exclude dirs and/or files: 
+[1.638s] -- Added test 'lint_cmake' to check CMake code style
+[1.644s] -- Added test 'uncrustify' to check C / C++ code style
+[1.644s] -- Configured uncrustify additional arguments: 
+[1.647s] -- Added test 'xmllint' to check XML markup files
+[1.654s] -- Configuring done (1.6s)
+[1.662s] -- Generating done (0.0s)
+[1.668s] -- Build files have been written to: /home/oswiwi/color_segmentation_ws/build/segmentation
+[1.676s] Invoked command in '/home/oswiwi/color_segmentation_ws/build/segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oswiwi/color_segmentation_ws/src/segmentation -DCMAKE_INSTALL_PREFIX=/home/oswiwi/color_segmentation_ws/install/segmentation
+[1.678s] Invoking command in '/home/oswiwi/color_segmentation_ws/build/segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/color_segmentation_ws/build/segmentation -- -j4 -l4
+[1.735s] Invoked command in '/home/oswiwi/color_segmentation_ws/build/segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/color_segmentation_ws/build/segmentation -- -j4 -l4
+[1.749s] Invoking command in '/home/oswiwi/color_segmentation_ws/build/segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/color_segmentation_ws/build/segmentation
+[1.760s] -- Install configuration: ""
+[1.761s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/package_run_dependencies/segmentation
+[1.761s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/parent_prefix_path/segmentation
+[1.761s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/ament_prefix_path.sh
+[1.761s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/ament_prefix_path.dsv
+[1.762s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/path.sh
+[1.762s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/path.dsv
+[1.762s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.bash
+[1.762s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.sh
+[1.762s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.zsh
+[1.763s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.dsv
+[1.763s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/package.dsv
+[1.763s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/packages/segmentation
+[1.763s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/cmake/segmentationConfig.cmake
+[1.764s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/cmake/segmentationConfig-version.cmake
+[1.764s] -- Installing: /home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/package.xml
+[1.766s] Invoked command in '/home/oswiwi/color_segmentation_ws/build/segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/color_segmentation_ws/build/segmentation

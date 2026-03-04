@@ -1,0 +1,55 @@
+[0.017s] Invoking command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oswiwi/prueba1_ws/src/cpp_robot_controller -DCMAKE_INSTALL_PREFIX=/home/oswiwi/prueba1_ws/install/cpp_robot_controller
+[0.096s] -- The C compiler identification is GNU 13.3.0
+[0.181s] -- The CXX compiler identification is GNU 13.3.0
+[0.205s] -- Detecting C compiler ABI info
+[0.333s] -- Detecting C compiler ABI info - done
+[0.348s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.348s] -- Detecting C compile features
+[0.349s] -- Detecting C compile features - done
+[0.361s] -- Detecting CXX compiler ABI info
+[0.506s] -- Detecting CXX compiler ABI info - done
+[0.521s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.521s] -- Detecting CXX compile features
+[0.522s] -- Detecting CXX compile features - done
+[0.528s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.755s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.938s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.021s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.048s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.114s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.257s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.264s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.412s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.445s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.622s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.782s] -- Configuring done (1.8s)
+[1.796s] -- Generating done (0.0s)
+[1.801s] -- Build files have been written to: /home/oswiwi/prueba1_ws/build/cpp_robot_controller
+[1.816s] Invoked command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/oswiwi/prueba1_ws/src/cpp_robot_controller -DCMAKE_INSTALL_PREFIX=/home/oswiwi/prueba1_ws/install/cpp_robot_controller
+[1.819s] Invoking command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/prueba1_ws/build/cpp_robot_controller -- -j4 -l4
+[1.893s] [ 50%] [32mBuilding CXX object CMakeFiles/led_node_cpp.dir/src/led_publisher.cpp.o[0m
+[8.630s] [100%] [32m[1mLinking CXX executable led_node_cpp[0m
+[8.896s] [100%] Built target led_node_cpp
+[8.913s] Invoked command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/prueba1_ws/build/cpp_robot_controller -- -j4 -l4
+[8.928s] Invoking command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/prueba1_ws/build/cpp_robot_controller
+[8.941s] -- Install configuration: ""
+[8.941s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/led_node_cpp
+[8.943s] -- Set non-toolchain portion of runtime path of "/home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/led_node_cpp" to ""
+[8.944s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/package_run_dependencies/cpp_robot_controller
+[8.944s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/parent_prefix_path/cpp_robot_controller
+[8.944s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.sh
+[8.944s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.dsv
+[8.944s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.sh
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.dsv
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.bash
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.sh
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.zsh
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.dsv
+[8.945s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.dsv
+[8.946s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/packages/cpp_robot_controller
+[8.946s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig.cmake
+[8.946s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig-version.cmake
+[8.947s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.xml
+[8.949s] Invoked command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/prueba1_ws/build/cpp_robot_controller

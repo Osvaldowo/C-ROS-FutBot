@@ -1,0 +1,27 @@
+[0.024s] Invoking command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/prueba1_ws/build/cpp_robot_controller -- -j4 -l4
+[0.148s] [ 50%] Built target led_node_cpp
+[0.150s] [ 75%] [32mBuilding CXX object CMakeFiles/twist_sequencer.dir/src/twist_sequencer.cpp.o[0m
+[7.018s] [100%] [32m[1mLinking CXX executable twist_sequencer[0m
+[7.296s] [100%] Built target twist_sequencer
+[7.314s] Invoked command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/oswiwi/prueba1_ws/build/cpp_robot_controller -- -j4 -l4
+[7.339s] Invoking command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/prueba1_ws/build/cpp_robot_controller
+[7.355s] -- Install configuration: ""
+[7.356s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/led_node_cpp
+[7.357s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/twist_sequencer
+[7.361s] -- Set non-toolchain portion of runtime path of "/home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/twist_sequencer" to ""
+[7.361s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/package_run_dependencies/cpp_robot_controller
+[7.363s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/parent_prefix_path/cpp_robot_controller
+[7.363s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.sh
+[7.363s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.dsv
+[7.364s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.sh
+[7.364s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.dsv
+[7.364s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.bash
+[7.364s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.sh
+[7.365s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.zsh
+[7.368s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.dsv
+[7.368s] -- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.dsv
+[7.368s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/packages/cpp_robot_controller
+[7.368s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig.cmake
+[7.368s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig-version.cmake
+[7.369s] -- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.xml
+[7.369s] Invoked command in '/home/oswiwi/prueba1_ws/build/cpp_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/oswiwi/prueba1_ws/build/cpp_robot_controller

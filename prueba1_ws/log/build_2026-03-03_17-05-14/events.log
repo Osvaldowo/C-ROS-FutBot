@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000335] (cpp_robot_controller) JobQueued: {'identifier': 'cpp_robot_controller', 'dependencies': OrderedDict()}
+[0.001203] (cpp_robot_controller) JobStarted: {'identifier': 'cpp_robot_controller'}
+[0.023615] (cpp_robot_controller) JobProgress: {'identifier': 'cpp_robot_controller', 'progress': 'cmake'}
+[0.025410] (cpp_robot_controller) JobProgress: {'identifier': 'cpp_robot_controller', 'progress': 'build'}
+[0.026437] (cpp_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/oswiwi/prueba1_ws/build/cpp_robot_controller', '--', '-j4', '-l4'], 'cwd': '/home/oswiwi/prueba1_ws/build/cpp_robot_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'oswiwi', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oswiwi', 'OLDPWD': '/home/oswiwi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3312', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oswiwi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oswiwi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/oswiwi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oswiwi-MacBookAir7-2:@/tmp/.ICE-unix/3126,unix/oswiwi-MacBookAir7-2:/tmp/.ICE-unix/3126', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/82e9169e_2ce1_4db8_96ae_4e5baf5701f3', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D0TDL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install/cpp_robot_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oswiwi/prueba1_ws/build/cpp_robot_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install/cpp_robot_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099505] (-) TimerEvent: {}
+[0.165858] (cpp_robot_controller) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/twist_sequencer.dir/src/twist_sequencer.cpp.o\x1b[0m\n'}
+[0.169797] (cpp_robot_controller) StdoutLine: {'line': b'[ 50%] Built target led_node_cpp\n'}
+[0.173068] (cpp_robot_controller) StdoutLine: {'line': b'[ 83%] Built target odom_publisher\n'}
+[0.199669] (-) TimerEvent: {}
+[0.302492] (-) TimerEvent: {}
+[0.403254] (-) TimerEvent: {}
+[0.503659] (-) TimerEvent: {}
+[0.604045] (-) TimerEvent: {}
+[0.704518] (-) TimerEvent: {}
+[0.804949] (-) TimerEvent: {}
+[0.905538] (-) TimerEvent: {}
+[1.006075] (-) TimerEvent: {}
+[1.106553] (-) TimerEvent: {}
+[1.207170] (-) TimerEvent: {}
+[1.307558] (-) TimerEvent: {}
+[1.407910] (-) TimerEvent: {}
+[1.508256] (-) TimerEvent: {}
+[1.608599] (-) TimerEvent: {}
+[1.708908] (-) TimerEvent: {}
+[1.809271] (-) TimerEvent: {}
+[1.909625] (-) TimerEvent: {}
+[2.009949] (-) TimerEvent: {}
+[2.110305] (-) TimerEvent: {}
+[2.212294] (-) TimerEvent: {}
+[2.312718] (-) TimerEvent: {}
+[2.413114] (-) TimerEvent: {}
+[2.513533] (-) TimerEvent: {}
+[2.613941] (-) TimerEvent: {}
+[2.714322] (-) TimerEvent: {}
+[2.814682] (-) TimerEvent: {}
+[2.915066] (-) TimerEvent: {}
+[3.015397] (-) TimerEvent: {}
+[3.115772] (-) TimerEvent: {}
+[3.216259] (-) TimerEvent: {}
+[3.317462] (-) TimerEvent: {}
+[3.417873] (-) TimerEvent: {}
+[3.518305] (-) TimerEvent: {}
+[3.618703] (-) TimerEvent: {}
+[3.719111] (-) TimerEvent: {}
+[3.819612] (-) TimerEvent: {}
+[3.919976] (-) TimerEvent: {}
+[4.020338] (-) TimerEvent: {}
+[4.120704] (-) TimerEvent: {}
+[4.221067] (-) TimerEvent: {}
+[4.321428] (-) TimerEvent: {}
+[4.421843] (-) TimerEvent: {}
+[4.522214] (-) TimerEvent: {}
+[4.622563] (-) TimerEvent: {}
+[4.722900] (-) TimerEvent: {}
+[4.823243] (-) TimerEvent: {}
+[4.923584] (-) TimerEvent: {}
+[5.023932] (-) TimerEvent: {}
+[5.124290] (-) TimerEvent: {}
+[5.224656] (-) TimerEvent: {}
+[5.325022] (-) TimerEvent: {}
+[5.425395] (-) TimerEvent: {}
+[5.525762] (-) TimerEvent: {}
+[5.626150] (-) TimerEvent: {}
+[5.726534] (-) TimerEvent: {}
+[5.826921] (-) TimerEvent: {}
+[5.927305] (-) TimerEvent: {}
+[6.027752] (-) TimerEvent: {}
+[6.128114] (-) TimerEvent: {}
+[6.228482] (-) TimerEvent: {}
+[6.328838] (-) TimerEvent: {}
+[6.429243] (-) TimerEvent: {}
+[6.529642] (-) TimerEvent: {}
+[6.630038] (-) TimerEvent: {}
+[6.730452] (-) TimerEvent: {}
+[6.830843] (-) TimerEvent: {}
+[6.931246] (-) TimerEvent: {}
+[7.031636] (-) TimerEvent: {}
+[7.132023] (-) TimerEvent: {}
+[7.232450] (-) TimerEvent: {}
+[7.332812] (-) TimerEvent: {}
+[7.433169] (-) TimerEvent: {}
+[7.533524] (-) TimerEvent: {}
+[7.633873] (-) TimerEvent: {}
+[7.734258] (-) TimerEvent: {}
+[7.827164] (cpp_robot_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable twist_sequencer\x1b[0m\n'}
+[7.834389] (-) TimerEvent: {}
+[7.934739] (-) TimerEvent: {}
+[8.035168] (-) TimerEvent: {}
+[8.135736] (-) TimerEvent: {}
+[8.208401] (cpp_robot_controller) StdoutLine: {'line': b'[100%] Built target twist_sequencer\n'}
+[8.226799] (cpp_robot_controller) CommandEnded: {'returncode': 0}
+[8.229052] (cpp_robot_controller) JobProgress: {'identifier': 'cpp_robot_controller', 'progress': 'install'}
+[8.235901] (-) TimerEvent: {}
+[8.243905] (cpp_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/oswiwi/prueba1_ws/build/cpp_robot_controller'], 'cwd': '/home/oswiwi/prueba1_ws/build/cpp_robot_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'oswiwi', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/oswiwi', 'OLDPWD': '/home/oswiwi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3312', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'oswiwi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'oswiwi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/oswiwi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/oswiwi-MacBookAir7-2:@/tmp/.ICE-unix/3126,unix/oswiwi-MacBookAir7-2:/tmp/.ICE-unix/3126', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/82e9169e_2ce1_4db8_96ae_4e5baf5701f3', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D0TDL3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install/cpp_robot_controller:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oswiwi/prueba1_ws/build/cpp_robot_controller', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/oswiwi/prueba1_ws/install/cpp_robot_controller:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.257783] (cpp_robot_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.258544] (cpp_robot_controller) StdoutLine: {'line': b'-- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/twist_sequencer\n'}
+[8.260996] (cpp_robot_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/twist_sequencer" to ""\n'}
+[8.261409] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/lib/cpp_robot_controller/odom_publisher\n'}
+[8.261823] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/package_run_dependencies/cpp_robot_controller\n'}
+[8.262165] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/parent_prefix_path/cpp_robot_controller\n'}
+[8.262532] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.sh\n'}
+[8.262826] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/ament_prefix_path.dsv\n'}
+[8.263071] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.sh\n'}
+[8.263235] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/environment/path.dsv\n'}
+[8.263355] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.bash\n'}
+[8.263464] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.sh\n'}
+[8.263572] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.zsh\n'}
+[8.263678] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/local_setup.dsv\n'}
+[8.263782] (cpp_robot_controller) StdoutLine: {'line': b'-- Installing: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.dsv\n'}
+[8.264181] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/ament_index/resource_index/packages/cpp_robot_controller\n'}
+[8.264491] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig.cmake\n'}
+[8.264693] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/cmake/cpp_robot_controllerConfig-version.cmake\n'}
+[8.264884] (cpp_robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/oswiwi/prueba1_ws/install/cpp_robot_controller/share/cpp_robot_controller/package.xml\n'}
+[8.266598] (cpp_robot_controller) CommandEnded: {'returncode': 0}
+[8.310863] (cpp_robot_controller) JobEnded: {'identifier': 'cpp_robot_controller', 'rc': 0}
+[8.312359] (-) EventReactorShutdown: {}

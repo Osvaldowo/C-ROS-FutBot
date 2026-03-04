@@ -1,0 +1,4 @@
+source;share/segmentation/local_setup.bash
+source;share/segmentation/local_setup.dsv
+source;share/segmentation/local_setup.sh
+source;share/segmentation/local_setup.zsh

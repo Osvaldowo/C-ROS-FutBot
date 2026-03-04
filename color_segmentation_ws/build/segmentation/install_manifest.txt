@@ -1,0 +1,15 @@
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/package_run_dependencies/segmentation
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/parent_prefix_path/segmentation
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/ament_prefix_path.sh
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/ament_prefix_path.dsv
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/path.sh
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/environment/path.dsv
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.bash
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.sh
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.zsh
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/local_setup.dsv
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/package.dsv
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/ament_index/resource_index/packages/segmentation
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/cmake/segmentationConfig.cmake
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/cmake/segmentationConfig-version.cmake
+/home/oswiwi/color_segmentation_ws/install/segmentation/share/segmentation/package.xml

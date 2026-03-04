@@ -1,0 +1,10 @@
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/uninstall.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/cpp_robot_controller_uninstall.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/led_node_cpp.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/test.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/edit_cache.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/rebuild_cache.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/list_install_components.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/install.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/install/local.dir
+/home/oswiwi/prueba1_ws/src/cpp_robot_controller/build/cpp_robot_controller/CMakeFiles/install/strip.dir
