@@ -16,3 +16,6 @@ __pycache__/
 # Archivos ocultos del sistema operativo (Mac/Linux)
 .DS_Store
 *~
+
+#Archivos de prueba
+*.csv
