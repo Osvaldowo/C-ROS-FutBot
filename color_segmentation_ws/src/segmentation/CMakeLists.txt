@@ -18,22 +18,37 @@ find_package(OpenCV REQUIRED)
 
 # Nodo de la Cámara
 add_executable(camera_node src/camera_node.cpp)
+# Es vital vincular OpenCV_LIBRARIES para el soporte de GStreamer
 target_link_libraries(camera_node ${OpenCV_LIBRARIES})
-ament_target_dependencies(camera_node rclcpp sensor_msgs cv_bridge)
+ament_target_dependencies(camera_node 
+  rclcpp 
+  sensor_msgs 
+  cv_bridge
+)
 
 # Nodo de Calibración
 add_executable(calibrator_node src/calibrator_node.cpp)
 target_link_libraries(calibrator_node ${OpenCV_LIBRARIES})
-ament_target_dependencies(calibrator_node rclcpp sensor_msgs std_msgs cv_bridge)
+ament_target_dependencies(calibrator_node 
+  rclcpp 
+  sensor_msgs 
+  std_msgs 
+  cv_bridge
+)
 
 # Nodo Detector (Filtro Alfa, Z, CLAHE)
 add_executable(detector_node src/detector_node.cpp)
 target_link_libraries(detector_node ${OpenCV_LIBRARIES})
-ament_target_dependencies(detector_node rclcpp sensor_msgs geometry_msgs std_msgs cv_bridge)
+ament_target_dependencies(detector_node 
+  rclcpp 
+  sensor_msgs 
+  geometry_msgs 
+  std_msgs 
+  cv_bridge
+)
 
 # --- 3. REGLAS DE INSTALACIÓN ---
 
-# Instalar los binarios compilados
 install(TARGETS
   camera_node
   calibrator_node
@@ -41,7 +56,6 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# Instalar carpetas de lanzamiento y configuración
 install(DIRECTORY
   launch
   config
