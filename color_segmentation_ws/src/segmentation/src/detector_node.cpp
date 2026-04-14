@@ -95,7 +95,8 @@ private:
                 
                 float diameter_pixels = radius * 2.0f;
                 // Usando constante focal empírica y pelota de golf
-                float z_raw = (4.27f * 634.66f) / diameter_pixels;
+                // float z_raw = (4.27f * 634.66f) / diameter_pixels;
+                float z_raw = (4.27f * 470.49f) / diameter_pixels;
 
                 // Filtro Alpha
                 if (z_filtrada_ == 0.0f) z_filtrada_ = z_raw;
