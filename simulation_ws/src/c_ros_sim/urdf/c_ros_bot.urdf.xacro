@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<robot name="c_ros_bot">
+<robot name="c_ros_bot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:arg name="robot_name" default="robot_1"/>
 
   <material name="blue"><color rgba="0 0 0.8 1"/></material>
   <material name="black"><color rgba="0 0 0 1"/></material>
@@ -10,7 +12,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
       <geometry>
-        <mesh filename="package://c_ros_sim/meshes/Futbot3.0.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find c_ros_sim)/meshes/Futbot3.0.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="blue"/>
     </visual>
@@ -137,7 +139,7 @@
       <always_on>true</always_on>
       <visualize>true</visualize> 
       <update_rate>30.0</update_rate> 
-      <topic>camera/image_raw</topic>
+      <topic>/$(arg robot_name)/camera/image_raw</topic>
       <camera name="head">
         <horizontal_fov>1.1944</horizontal_fov> 
         <image>
@@ -178,10 +180,10 @@
       <wheel_radius>0.034</wheel_radius>
       <max_linear_velocity>0.88</max_linear_velocity>
       <max_angular_velocity>10.6</max_angular_velocity>
-      <topic>cmd_vel</topic>
-      <odom_topic>odom</odom_topic>
-      <frame_id>odom</frame_id>
-      <child_frame_id>base_footprint</child_frame_id>
+      <topic>/$(arg robot_name)/cmd_vel</topic>
+      <odom_topic>/$(arg robot_name)/odom</odom_topic>
+      <frame_id>$(arg robot_name)/odom</frame_id>
+      <child_frame_id>$(arg robot_name)/base_footprint</child_frame_id>
     </plugin>
   </gazebo>
 </robot>
