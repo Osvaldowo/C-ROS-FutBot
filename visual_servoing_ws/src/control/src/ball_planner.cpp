@@ -6,6 +6,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "nav_msgs/msg/path.hpp"
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 using namespace std::chrono_literals;
 
@@ -14,6 +15,7 @@ class BallPlannerNode : public rclcpp::Node
 public:
   BallPlannerNode() : Node("ball_planner_node"), has_odom_(false)
   {
+
     // Parámetros de la cámara (HFOV de tu OV5647 = 1.1944 radianes)
     this->declare_parameter("camera_hfov", 1.1944);
     this->declare_parameter("image_width", 640.0);
@@ -27,6 +29,9 @@ public:
 
     sub_vision_ = this->create_subscription<geometry_msgs::msg::Point>(
       "/vision/ball_position", 10, std::bind(&BallPlannerNode::vision_callback, this, std::placeholders::_1));
+
+    sub_scan_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+      "/scan", rclcpp::SensorDataQoS(), std::bind(&BallPlannerNode::scan_callback, this, std::placeholders::_1));
 
     RCLCPP_INFO(this->get_logger(), "Planificador de Trayectorias iniciado. Esperando visión y odometría...");
   }
@@ -42,6 +47,39 @@ private:
     robot_theta_ = std::atan2(siny_cosp, cosy_cosp);
 
     has_odom_ = true;
+  }
+
+  void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
+  {
+    if (!has_odom_) return;
+
+    double force_x = 0.0;
+    double force_y = 0.0;
+    double k_rep = 0.05; // Ganancia de repulsión (ajustar según el peso deseado)
+    double safe_dist = 0.4; // Ignorar objetos a más de 40 cm
+
+    // Recorrer todos los rayos del LiDAR
+    for (size_t i = 0; i < msg->ranges.size(); ++i) {
+      double r = msg->ranges[i];
+      
+      // Si el láser lee un dato válido y está peligrosamente cerca
+      if (r > msg->range_min && r < safe_dist) {
+        // Calcular el ángulo global de este rayo
+        double angle_local = msg->angle_min + i * msg->angle_increment;
+        double angle_global = robot_theta_ + angle_local;
+
+        // Calcular la magnitud de repulsión (inversamente proporcional al cuadrado de la distancia)
+        double magnitude = k_rep / (r * r);
+
+        // Sumar el vector de fuerza (hacia el lado opuesto del obstáculo, por eso el '-')
+        force_x -= magnitude * std::cos(angle_global);
+        force_y -= magnitude * std::sin(angle_global);
+      }
+    }
+
+    // Guardar la fuerza resultante para usarla en la curva de Bezier
+    rep_x_ = force_x;
+    rep_y_ = force_y;
   }
 
   void vision_callback(const geometry_msgs::msg::Point::SharedPtr msg)
@@ -71,8 +109,8 @@ private:
     
     // P1: Proyectado frente al robot (50% de la distancia total) para forzar tangencia
     double k = distance_m * 0.5; 
-    double P1_x = robot_x_ + k * std::cos(robot_theta_);
-    double P1_y = robot_y_ + k * std::sin(robot_theta_);
+    double P1_x = robot_x_ + k * std::cos(robot_theta_) + rep_x_; // Agregar la fuerza de repulsión al punto de control
+    double P1_y = robot_y_ + k * std::sin(robot_theta_) + rep_y_; // Agregar la fuerza de repulsión al punto de control
 
     // P2 y P3: La posición de la pelota
     double P2_x = global_ball_x;
@@ -101,10 +139,13 @@ private:
 
   bool has_odom_;
   double robot_x_, robot_y_, robot_theta_;
+  double rep_x_ = 0.0;
+  double rep_y_ = 0.0;
   
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr sub_odom_;
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr sub_vision_;
   rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr pub_path_;
+  rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr sub_scan_;
 };
 
 int main(int argc, char * argv[])

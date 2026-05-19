@@ -15,4 +15,11 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
+# --- NUEVO: Instalamos el script de teleoperación dual ---
+# Esto permite que 'ros2 run' encuentre tu archivo de Python
+install(PROGRAMS
+  scripts/dual_teleop.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()
