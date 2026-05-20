@@ -88,7 +88,7 @@
     <model name="barda_oeste"><static>true</static><pose>-1.215 0 0.11 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.02 1.82 0.22</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.02 1.82 0.22</size></box></geometry><material><ambient>0.1 0.1 0.1 1</ambient></material></visual></link></model>
 
     <model name="pelota">
-      <pose>0 0.5 0.1 0 0 0</pose> <link name="link">
+      <pose>0 0.0 0.1 0 0 0</pose> <link name="link">
         <collision name="collision">
           <geometry><sphere><radius>0.02135</radius></sphere></geometry> <surface>
             <bounce>

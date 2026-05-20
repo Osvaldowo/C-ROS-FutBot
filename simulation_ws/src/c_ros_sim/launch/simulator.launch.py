@@ -33,22 +33,25 @@ def generate_launch_description():
         launch_arguments={'gz_args': f'-r {world_path}'}.items()
     )
 
+    # CORRECCIÓN 1: Usamos '-string' en lugar de '-topic' para mayor fiabilidad
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-topic', 'robot_description', '-name', 'futbot_v1', '-z', '0.15'],
+        arguments=['-string', robot_desc, '-name', 'futbot_v1', '-z', '0.15'],
         output='screen'
     )
 
+    # CORRECCIÓN 2: Agregamos el tópico /clock vital para use_sim_time
     bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
             '/cmd_vel@geometry_msgs/msg/Twist]gz.msgs.Twist',
             '/odom@nav_msgs/msg/Odometry[gz.msgs.Odometry',
             '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V',
             '/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image', # Imagen Raw
+            '/camera/image_raw@sensor_msgs/msg/Image[gz.msgs.Image', 
             '/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo'
         ],
         output='screen'
