@@ -14,15 +14,6 @@ def generate_launch_description():
             default_value='futbot_1',
             description='Prefijo/Namespace del robot'
         ),
-        # 1. Nodo de la Cámara (Driver)
-        Node(
-            package='vision_artificial',
-            executable='camera_node',
-            name='camera_driver',
-            namespace=robot_namespace,
-            output='screen',
-            parameters=[{'fps': 30}]
-        ),
 
         # 2. Nodo de Calibración (HSV Tuning)
         Node(

@@ -19,7 +19,7 @@ public:
         rclcpp::SensorDataQoS qos_profile_sensor;
 
         sub_camera_ = this->create_subscription<sensor_msgs::msg::Image>(
-            "/camera/image_raw", 
+            "camera/image_raw", 
             qos_profile_sensor, // <--- Aquí aplicamos el perfil compatible
             std::bind(&CalibratorNode::image_callback, this, std::placeholders::_1));
 
@@ -28,7 +28,7 @@ public:
         qos_profile_transient.transient_local();
 
         pub_calibration_ = this->create_publisher<std_msgs::msg::Int32MultiArray>(
-            "/vision/calibration_data", qos_profile_transient);
+            "vision/calibration_data", qos_profile_transient);
 
         // Ventana y Sliders
         cv::namedWindow("Calibracion", cv::WINDOW_NORMAL);

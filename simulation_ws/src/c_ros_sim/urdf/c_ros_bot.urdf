@@ -23,7 +23,6 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
       <geometry>
-        <!-- Asegúrate de que esta ruta sea correcta -->
         <mesh filename="package://c_ros_sim/meshes/Futbot3.0.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="blue"/>
@@ -281,6 +280,8 @@
       <odom_topic>$(arg prefix)odom</odom_topic>
       <frame_id>$(arg prefix)odom</frame_id>
       <child_frame_id>$(arg prefix)base_footprint</child_frame_id>
+
+      <tf_topic>/tf</tf_topic>
     </plugin>
   </gazebo>
 

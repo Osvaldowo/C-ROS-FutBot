@@ -33,7 +33,7 @@ public:
         if (!cap_.isOpened()) {
             RCLCPP_ERROR(this->get_logger(), "Error: No se pudo abrir la cámara con GStreamer.");
         } else {
-            RCLCPP_INFO(this->get_logger(), "Cámara FutBot iniciada en /camera/image_raw");
+            RCLCPP_INFO(this->get_logger(), "Cámara FutBot iniciada con GStreamer.");
             timer_ = this->create_wall_timer(33ms, std::bind(&CameraNode::timer_callback, this));
         }
     }

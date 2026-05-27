@@ -51,11 +51,11 @@ class MotorControllerNode(Node):
         self.primer_ciclo = True
 
         # --- PUBLICADORES (Tópicos Sincronizados con el nodo C++) ---
-        self.pub_vel_izq = self.create_publisher(Float32, '/motor_vel_left', 10)
-        self.pub_vel_der = self.create_publisher(Float32, '/motor_vel_right', 10)
+        self.pub_vel_izq = self.create_publisher(Float32, 'motor_vel_left', 10)
+        self.pub_vel_der = self.create_publisher(Float32, 'motor_vel_right', 10)
         
         # Suscriptor
-        self.sub_cmd_vel = self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
+        self.sub_cmd_vel = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
 
         # Timer a 20 Hz
         self.timer = self.create_timer(0.05, self.timer_callback)

@@ -108,5 +108,27 @@
       </link>
     </model>
 
+    <model name="obstaculo">
+      <pose>-0.25 0.0 0.1 0 0 0</pose> <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.04</radius><length>0.5</length></cylinder></geometry> <surface>
+            <bounce>
+              <restitution_coefficient>0.6</restitution_coefficient> <threshold>0.1</threshold>
+            </bounce>
+            <friction>
+              <ode><mu>0.8</mu><mu2>0.8</mu2></ode> </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.04</radius><length>0.5</length></cylinder></geometry>
+          <material>
+            <!-- Un color diferente para distinguirlo de la pelota -->
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
   </world>
 </sdf>

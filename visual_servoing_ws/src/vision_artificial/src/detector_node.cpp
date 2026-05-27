@@ -13,7 +13,7 @@ public:
         rclcpp::SensorDataQoS qos_profile_sensor;
 
         sub_camera_ = this->create_subscription<sensor_msgs::msg::Image>(
-            "/camera/image_raw", 
+            "camera/image_raw", 
             qos_profile_sensor,
             std::bind(&DetectorNode::image_callback, this, std::placeholders::_1));
 
@@ -22,12 +22,12 @@ public:
         qos_profile_transient.transient_local();
         
         sub_calibration_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
-            "/vision/calibration_data", qos_profile_transient,
+            "vision/calibration_data", qos_profile_transient,
             std::bind(&DetectorNode::calibration_callback, this, std::placeholders::_1));
 
         // Publicadores
-        pub_point_ = this->create_publisher<geometry_msgs::msg::Point>("/vision/ball_position", 10);
-        pub_debug_ = this->create_publisher<sensor_msgs::msg::Image>("/vision/debug_output", 10);
+        pub_point_ = this->create_publisher<geometry_msgs::msg::Point>("vision/ball_position", 10);
+        pub_debug_ = this->create_publisher<sensor_msgs::msg::Image>("vision/debug_output", 10);
 
         // Valores iniciales por defecto (verde/amarillo de prueba)
         lower_hsv_ = cv::Scalar(0, 100, 100);

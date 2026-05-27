@@ -25,10 +25,10 @@ public:
     this->declare_parameter("ki_angular", 0.05);
     this->declare_parameter("max_angular_speed", 1.0);
 
-    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
     
     sub_odom_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/odom", 10, std::bind(&PIStraightSequencer::odom_callback, this, std::placeholders::_1));
+      "odom", 10, std::bind(&PIStraightSequencer::odom_callback, this, std::placeholders::_1));
 
     last_time_ = this->now();
     timer_ = this->create_wall_timer(20ms, std::bind(&PIStraightSequencer::control_loop, this));

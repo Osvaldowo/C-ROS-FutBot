@@ -29,10 +29,10 @@ public:
     this->declare_parameter("max_linear_speed", 0.88); 
     this->declare_parameter("max_angular_speed", 3.0); 
 
-    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
     
     sub_vision_ = this->create_subscription<geometry_msgs::msg::Point>(
-      "/vision/ball_position", 10, 
+      "vision/ball_position", 10, 
       std::bind(&VisualTrackerNode::vision_callback, this, std::placeholders::_1));
 
     watchdog_timer_ = this->create_wall_timer(

@@ -19,13 +19,13 @@ public:
     this->declare_parameter("linear_velocity", 0.5);     // Velocidad base de persecución
     this->declare_parameter("max_angular_speed", 3.0);   // Límite de giro
 
-    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
     
     sub_path_ = this->create_subscription<nav_msgs::msg::Path>(
-      "/planned_path", 10, std::bind(&PurePursuitNode::path_callback, this, std::placeholders::_1));
+      "planned_path", 10, std::bind(&PurePursuitNode::path_callback, this, std::placeholders::_1));
 
     sub_odom_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/odom", 10, std::bind(&PurePursuitNode::odom_callback, this, std::placeholders::_1));
+      "odom", 10, std::bind(&PurePursuitNode::odom_callback, this, std::placeholders::_1));
 
     RCLCPP_INFO(this->get_logger(), "Controlador Pure Pursuit Iniciado.");
   }

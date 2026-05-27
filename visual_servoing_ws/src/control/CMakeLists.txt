@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 # --- 2. Nodos de Control Cinemático ---
 # (Asegúrate de que estos archivos .cpp estén dentro de control/src/)
@@ -25,10 +26,11 @@ add_executable(visual_tracker_node src/visual_tracker_node.cpp)
 ament_target_dependencies(visual_tracker_node rclcpp geometry_msgs)
 
 add_executable(ball_planner src/ball_planner.cpp)
-ament_target_dependencies(ball_planner rclcpp geometry_msgs nav_msgs sensor_msgs)
-
+ament_target_dependencies(ball_planner rclcpp geometry_msgs nav_msgs sensor_msgs visualization_msgs)
 add_executable(pure_pursuit_node src/pure_pursuit_node.cpp)
 ament_target_dependencies(pure_pursuit_node rclcpp geometry_msgs nav_msgs)
+
+
 
 # --- 3. Reglas de Instalación ---
 install(TARGETS
@@ -38,6 +40,11 @@ install(TARGETS
   ball_planner
   pure_pursuit_node
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 ament_package()

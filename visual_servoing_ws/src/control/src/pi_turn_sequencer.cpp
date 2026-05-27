@@ -21,11 +21,11 @@ public:
     this->declare_parameter("max_speed", 1.5); // Velocidad angular máxima
     this->declare_parameter("tolerance", 0.02); // Tolerancia más estricta (aprox 1 grado)
 
-    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
     
     // Suscribirse a la odometría que publica Gazebo
     sub_odom_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/odom", 10, std::bind(&PITurnSequencer::odom_callback, this, std::placeholders::_1));
+      "odom", 10, std::bind(&PITurnSequencer::odom_callback, this, std::placeholders::_1));
 
     last_time_ = this->now();
 
